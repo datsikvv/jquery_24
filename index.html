@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+            .active {
+                color: red;
+            }
+            </style>
+</head>
+<body>
+    
+<!-- <input type="text">
+<input type="text">
+<a href="http://">test link</a>
+
+
+<ul class="first-list" style="background-color: #51c779" my-attr-first="Hellow world!!" >
+    <li>1</li>
+    <li>2</li>
+    <li >3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li lass="my-li-2">3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<span class="main">
+    Hello world
+    <p> </p>  </span>
+
+    <div id="main">
+            <p> 
+                <span>   Hello world 
+                </span>
+            </p>
+            <ul>
+                <li class="my-li">
+                    <span>
+                        My name  Vova
+                    </span>
+                </li>
+                </ul>
+                <ul>
+                    <li>   25</li>
+                </ul>
+    </div> -->
+
+<button>one</button>
+<button disabled>two</button>
+<button>three</button>
+
+
+
+<ul class="my-list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+
+<button class="My-btn">Click ME</button>
+<p class="my-text"></p>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>   
+<script>
+'use strict'
+//console.log($('#main span').css("background-color", "#9a9a9a"   ));
+// console.log($("input[type=text]"));
+// console.log($("a[href^='http://']"));
+// console.log($("li:eq(3)").text());
+// console.log($("li:first").text());
+// console.log($("li:last").text());
+// console.log($("li:odd").text());
+// console.log($(":disabled").text());
+// console.log($(":enabled").text());
+// console.log($(".first-list").attr("style"));
+// console.log($(".first-list").attr("my-attr-first"));
+// console.log($("#main >  p").attr({
+//     style: "color: green",
+//     title: " Main ted p"
+// }));
+// const myParagraph = $("#main > p");
+
+// myParagraph.attr("class", "test-class");
+// myParagraph.attr("style", (i, v) => {
+//     console.log(i);
+//     console.log(v);
+//     return "color: red; font-size: 40px;";
+// });
+// myParagraph.css({
+//   color :"yellow",
+//   "font-size": "30px" 
+// })
+// myParagraph.css(
+//   "background-color", "blue"
+// );
+
+// myParagraph.css("color", (i, v) => {
+//     return "red";
+// });
+
+// const myLi = $(".my-li");
+
+// console.log(myLi.parent().next().children().text());
+
+// console.log(myLi.parent().next().siblings().text());
+
+
+
+// const myLi_2 = $(".my-li-2");
+// const myUl = myLi_2.parent()
+
+// console.log(myUl.children());
+
+// console.log(myLi.parent().find());
+
+
+
+// const myBtn = $(".My-btn"); 
+// myBtn.on('click', (event) => {
+// console.log(event)
+// })
+
+// const myBtn = document.querySelector('.My-btn');
+
+// myBtn[0].addEventListener('click', (event) => {
+// console.log(event);
+// })
+
+const myLi = $(".my-list"); 
+const myText = $(".my-text"); 
+let i = 0;; 
+
+myLi.on('click', (event)=> {
+    $(event.target).siblings().removeClass('active');
+    $(event.target).addClass('active');
+    i++;
+    myText.text(i);
+
+});
+
+const myBtn = $(".My-btn"); 
+
+
+myBtn.on('click', (event) => {
+    i++;
+    myText.text(i);
+});
+
+
+</script>
+
+</body>
+</html>
